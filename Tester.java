@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Tester {
   public static void main(String[] args) {
     int[] array0 = {};
@@ -6,6 +8,20 @@ public class Tester {
     int[] array3 = {1, 2, 3};
     int[] array4 = {1, 2, 3, 4};
     int[] array5 = {4, 1, 5, 2, 3};
+    int[][] A = { {  1,  0, 12, -1 },
+                  {  7, -2,  2,  1 },
+                  { -5, -2,  2, -9 }
+               };
+    int[][] B  = { { 1, 3, 5 } };
+    int[][] C = { {  1,  2, 3, 4 },
+                  {  5, 7,  6,  8 },
+                  { 0, 0,  -2, -1 }
+               };
+    int[][] D = { {  0,  0, 2, -1 },
+                  {  2, -2,  2,  1 },
+                  { 2, -8,  2, -9 }
+               };
+    int[][] E = { {} };
 
     System.out.println("sum() Tests:");
     System.out.println(ArrayOps.sum(array0));
@@ -22,5 +38,19 @@ public class Tester {
     System.out.println(ArrayOps.largest(array3));
     System.out.println(ArrayOps.largest(array4));
     System.out.println(ArrayOps.largest(array5));
+    System.out.println();
+    System.out.println("sumRows() Tests:");
+    System.out.print("Expected: [12, 8, -14] Result: ");
+    System.out.println(Arrays.toString(ArrayOps.sumRows(A)));
+    System.out.print("Expected: [9] Result: ");
+    System.out.println(Arrays.toString(ArrayOps.sumRows(B)));
+    System.out.print("Expected: [10, 26, -3] Result: ");
+    System.out.println(Arrays.toString(ArrayOps.sumRows(C)));
+    System.out.print("Expected: [1, 3, -13] Result: ");
+    System.out.println(Arrays.toString(ArrayOps.sumRows(D)));
+    System.out.print("Expected: [0] Result: ");
+    System.out.println(Arrays.toString(ArrayOps.sumRows(E)));
+    System.out.println();
+
   }
 }
