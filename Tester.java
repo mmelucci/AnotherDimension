@@ -115,5 +115,15 @@ public class Tester {
     System.out.print("Expected: true Result: ");
     System.out.println(ArrayOps.isRowMagic(E));
     System.out.println();
+    System.out.println("isColMagic() Tests:");
+    System.out.print("Expected: false Result: ");
+    System.out.println(ArrayOps.isColMagic(F));
+    System.out.print("Expected: true Result: ");
+    System.out.println(ArrayOps.isColMagic(G));
+    System.out.print("Expected: true Result: ");
+    System.out.println(ArrayOps.isColMagic(H));
+    System.out.print("Expected: true Result: ");
+    System.out.println(ArrayOps.isColMagic(E));
+    System.out.println();
   }
 }
