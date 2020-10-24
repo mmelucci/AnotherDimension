@@ -24,19 +24,31 @@ public class Tester {
     int[][] E = { {} };
 
     System.out.println("sum() Tests:");
+    System.out.print("Expected: 0 Result: ");
     System.out.println(ArrayOps.sum(array0));
+    System.out.print("Expected: 1 Result: ");
     System.out.println(ArrayOps.sum(array1));
+    System.out.print("Expected: 3 Result: ");
     System.out.println(ArrayOps.sum(array2));
+    System.out.print("Expected: 6 Result: ");
     System.out.println(ArrayOps.sum(array3));
+    System.out.print("Expected: 10 Result: ");
     System.out.println(ArrayOps.sum(array4));
+    System.out.print("Expected: 15 Result: ");
     System.out.println(ArrayOps.sum(array5));
     System.out.println();
     System.out.println("largest() Tests:");
+    System.out.print("Expected: 0 Result: ");
     System.out.println(ArrayOps.largest(array0));
+    System.out.print("Expected: 1 Result: ");
     System.out.println(ArrayOps.largest(array1));
+    System.out.print("Expected: 2 Result: ");
     System.out.println(ArrayOps.largest(array2));
+    System.out.print("Expected: 3 Result: ");
     System.out.println(ArrayOps.largest(array3));
+    System.out.print("Expected: 4 Result: ");
     System.out.println(ArrayOps.largest(array4));
+    System.out.print("Expected: 5 Result: ");
     System.out.println(ArrayOps.largest(array5));
     System.out.println();
     System.out.println("sumRows() Tests:");
@@ -50,6 +62,16 @@ public class Tester {
     System.out.println(Arrays.toString(ArrayOps.sumRows(D)));
     System.out.print("Expected: [0] Result: ");
     System.out.println(Arrays.toString(ArrayOps.sumRows(E)));
+    System.out.println();
+    System.out.println("largestInRows() Tests:");
+    System.out.print("Expected: [12, 7, 2] Result: ");
+    System.out.println(Arrays.toString(ArrayOps.largestInRows(A)));
+    System.out.print("Expected: [5] Result: ");
+    System.out.println(Arrays.toString(ArrayOps.largestInRows(B)));
+    System.out.print("Expected: [4, 8, 0] Result: ");
+    System.out.println(Arrays.toString(ArrayOps.largestInRows(C)));
+    System.out.print("Expected: [2, 2, 2] Result: ");
+    System.out.println(Arrays.toString(ArrayOps.largestInRows(D)));
     System.out.println();
 
   }
