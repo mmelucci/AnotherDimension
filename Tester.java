@@ -73,6 +73,18 @@ public class Tester {
     System.out.print("Expected: [2, 2, 2] Result: ");
     System.out.println(Arrays.toString(ArrayOps.largestInRows(D)));
     System.out.println();
+    System.out.println("sum() Tests:");
+    System.out.print("Expected: 6 Result: ");
+    System.out.println(ArrayOps.sum(A));
+    System.out.print("Expected: 9 Result: ");
+    System.out.println(ArrayOps.sum(B));
+    System.out.print("Expected: 33 Result: ");
+    System.out.println(ArrayOps.sum(C));
+    System.out.print("Expected: -9 Result: ");
+    System.out.println(ArrayOps.sum(D));
+    System.out.print("Expected: 0 Result: ");
+    System.out.println(ArrayOps.sum(E));
+    System.out.println();
 
   }
 }
