@@ -85,6 +85,17 @@ public class Tester {
     System.out.print("Expected: 0 Result: ");
     System.out.println(ArrayOps.sum(E));
     System.out.println();
-
+    System.out.println("sumCols() Tests:");
+    System.out.print("Expected: [3, -4, 16, -9] Result: ");
+    System.out.println(Arrays.toString(ArrayOps.sumCols(A)));
+    System.out.print("Expected: [1, 3, 5] Result: ");
+    System.out.println(Arrays.toString(ArrayOps.sumCols(B)));
+    System.out.print("Expected: [6, 9, 7, 11] Result: ");
+    System.out.println(Arrays.toString(ArrayOps.sumCols(C)));
+    System.out.print("Expected: [4, -10, 6, -9] Result: ");
+    System.out.println(Arrays.toString(ArrayOps.sumCols(D)));
+    System.out.print("Expected: [] Result: ");
+    System.out.println(Arrays.toString(ArrayOps.sumCols(E)));
+    System.out.println();
   }
 }
