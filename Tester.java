@@ -30,6 +30,8 @@ public class Tester {
                   { 3,  3, 3 } };  //this is colMagic but NOT rowMagic
     int[][] H = { {  2,  2, 2 },
                   {  2, 2, 2 } };  //this is both colMagic AND rowMagic
+    int[][] I = { {  2,  4, 2 },
+                  {  2, 2, 2 } };
 
     System.out.println("sum() Tests:");
     System.out.print("Expected: 0 Result: ");
@@ -124,6 +126,12 @@ public class Tester {
     System.out.println(ArrayOps.isColMagic(H));
     System.out.print("Expected: true Result: ");
     System.out.println(ArrayOps.isColMagic(E));
+    System.out.println();
+    System.out.println("isLocationMagic() Tests:");
+    System.out.print("Expected: false Result: ");
+    System.out.println(ArrayOps.isLocationMagic(I, 0, 1));
+    System.out.print("Expected: true Result: ");
+    System.out.println(ArrayOps.isLocationMagic(I, 1, 1));
     System.out.println();
   }
 }
