@@ -22,6 +22,14 @@ public class Tester {
                   { 2, -8,  2, -9 }
                };
     int[][] E = { {} };
+    int[][] F = { {  1,  2, 3, 4 },
+                  {  2, 3,  4,  1 },
+                  { 3, 4,  1, 2 } };  //this is rowMagic but NOT colMagic
+    int[][] G = { {  1,  1, 1 },
+                  {  2, 2, 2 },
+                  { 3,  3, 3 } };  //this is colMagic but NOT rowMagic
+    int[][] H = { {  2,  2, 2 },
+                  {  2, 2, 2 } };  //this is both colMagic AND rowMagic
 
     System.out.println("sum() Tests:");
     System.out.print("Expected: 0 Result: ");
@@ -96,6 +104,16 @@ public class Tester {
     System.out.println(Arrays.toString(ArrayOps.sumCols(D)));
     System.out.print("Expected: [] Result: ");
     System.out.println(Arrays.toString(ArrayOps.sumCols(E)));
+    System.out.println();
+    System.out.println("isRowMagic() Tests:");
+    System.out.print("Expected: true Result: ");
+    System.out.println(ArrayOps.isRowMagic(F));
+    System.out.print("Expected: false Result: ");
+    System.out.println(ArrayOps.isRowMagic(G));
+    System.out.print("Expected: true Result: ");
+    System.out.println(ArrayOps.isRowMagic(H));
+    System.out.print("Expected: true Result: ");
+    System.out.println(ArrayOps.isRowMagic(E));
     System.out.println();
   }
 }
